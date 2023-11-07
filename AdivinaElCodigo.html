@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Adivina el codigo</title>
+    <script src="/Scripts/AdivinaElCodigo.js"></script>
+    <link rel="stylesheet" href="CSS/AdivinaElCodigo.css">
+    <link rel="icon" href="Images/Icon.jpg">
+</head>
+
+<body>
+    <header>
+        <h1>Adivina el número secreto</h1>
+    </header>
+    <div class="mainBody">
+        <div class="numDisplay">
+            <div id="secretDigit">
+                <p>*</p>
+            </div>
+            <div id="secretDigit">
+                <p>*</p>
+            </div>
+            <div id="secretDigit">
+                <p>*</p>
+            </div>
+            <div id="secretDigit">
+                <p>*</p>
+            </div>
+            <div id="secretDigit">
+                <p>*</p>
+            </div>
+        </div>
+        <div class="form">
+            <h3>Escribe aqui tu numero</h3>
+            <form action="javascript:onGuess()">
+                <input type="text" placeholder="01234" id="numInputBox">
+                <button id="send">COMPROBAR</button>
+            </form>
+        </div>
+        <div id="message">Primer intento, suerte!</div>
+        <div class="numDisplay">
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
