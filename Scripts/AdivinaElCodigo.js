@@ -21,6 +21,7 @@ function onGuess(){
             guessNum++;
             let separatedGuess = guess.split('');
             if(checkEqual(separatedGuess, separatedTarget)){
+                document.getElementById("numInputBox").disabled = true;
                 win(separatedGuess);
             }
             else{
@@ -72,6 +73,7 @@ async function win(userGuess){
     guessedNum.className = 'numDisplay';
     const guessRow = document.getElementById("guesses").appendChild(guessedNum);
     
+    
     for (i = 0; i < 5; i++){
         let digit = document.createElement("div");
         digit.className = 'guessDigitGreen';
@@ -112,7 +114,7 @@ async function attempt(userGuess){
             availableDig[parseInt(userGuess[i])]--;
         }
     }
-
+    document.getElementById("numInputBox").disabled = true;
     for (i = 0; i < 5; i++){
 
         
@@ -149,6 +151,9 @@ async function attempt(userGuess){
         
         await delay(200);
     }
+    document.getElementById("numInputBox").disabled = false;
+    document.getElementById("numInputBox").select();
+
     switch(guessNum){
         case 1:
             document.getElementById("message").innerText = "4 intentos restantes";
@@ -164,6 +169,7 @@ async function attempt(userGuess){
             break;
         case 5:
             document.getElementById("message").innerText = "Vaya, no lo acertaste";
+            document.getElementById("numInputBox").disabled = true;
             fail()
             break;
     }
@@ -171,9 +177,10 @@ async function attempt(userGuess){
 
 function fail(){
     document.getElementById("send").innerText = "NUEVA PARTIDA"
-    
+    reloadButton = true;
     for(i = 0; i < 5; i++){
         document.getElementsByName("secretdigit")[i].innerHTML = separatedTarget[i]
+        document.getElementsByName("secretdigit")[i].classList.add("discovered")
     }
     
 }

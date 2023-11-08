@@ -32,6 +32,17 @@ header h1{
     align-content: center;
     align-items: center;
 }
+#secretDigitDiscovered{
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 6px;
+    background-color:#43a047;
+    align-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
 #secretDigit p{
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
@@ -91,6 +102,10 @@ header h1{
     color: white;
     transition: 0.1s;
 }
+#send:hover{
+    background-color: rgb(95, 141, 224);
+    transition: 0.2s;
+}
 #send:active{
     background-color: rgb(74, 110, 177);
     transition: 0.1s;
@@ -129,7 +144,7 @@ header h1{
     text-align: center;
     border-radius: 10px;
     margin: 6px;
-    background-color:rgb(248, 248, 31);
+    background-color:#e4a81d;
     align-content: center;
     align-items: center;
 }
@@ -139,7 +154,7 @@ header h1{
     text-align: center;
     border-radius: 10px;
     margin: 6px;
-    background-color:rgb(4, 180, 4);
+    background-color: #43a047;
     align-content: center;
     align-items: center;
     transition: 1s;
