@@ -16,30 +16,30 @@
     <div class="mainBody">
         <div class="numDisplay">
             <div id="secretDigit">
-                <p>*</p>
+                <p name="secretdigit">*</p>
             </div>
             <div id="secretDigit">
-                <p>*</p>
+                <p name="secretdigit">*</p>
             </div>
             <div id="secretDigit">
-                <p>*</p>
+                <p name="secretdigit">*</p>
             </div>
             <div id="secretDigit">
-                <p>*</p>
+                <p name="secretdigit">*</p>
             </div>
             <div id="secretDigit">
-                <p>*</p>
+                <p name="secretdigit">*</p>
             </div>
         </div>
         <div class="form">
             <h3>Escribe aqui tu numero</h3>
             <form action="javascript:onGuess()">
-                <input type="text" placeholder="01234" id="numInputBox">
+                <input type="text" placeholder="00000" id="numInputBox" autocomplete="off">
                 <button id="send">COMPROBAR</button>
             </form>
         </div>
         <div id="message">Primer intento, suerte!</div>
-        <div class="numDisplay">
+        <div id="guesses">
             
         </div>
     </div>

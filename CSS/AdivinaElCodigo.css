@@ -105,8 +105,15 @@ header h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 18px;
+    margin-bottom: 5px;
 }
-#guessDigit{
+#guesses{
+    width: 510;
+}
+#guesses .numDisplay{
+    justify-content: flex-start;
+}
+.guessDigitGray{
     width: 90px;
     height: 90px;
     text-align: center;
@@ -116,9 +123,45 @@ header h1{
     align-content: center;
     align-items: center;
 }
-#guessDigit p{
+.guessDigitYellow{
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 6px;
+    background-color:rgb(248, 248, 31);
+    align-content: center;
+    align-items: center;
+}
+.guessDigitGreen{
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 6px;
+    background-color:rgb(4, 180, 4);
+    align-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.guessDigitGray p{
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 32px;
     font-weight: bold;
+    color: white;
+}
+.guessDigitYellow p{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 32px;
+    font-weight: bold;
+    color: white;
+}
+.guessDigitGreen p{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 32px;
+    font-weight: bold;
+    color: white;
 }
