@@ -1,7 +1,7 @@
 
 
 let targetNum = Math.floor(Math.random() * (99999 - 10000 + 1) + 10000);
-//console.log(targetNum);
+console.log(targetNum);
 let separatedTarget = targetNum.toString().split('');
 let guessNum = 0;
 let guessArea = document.getElementById("guesses");
